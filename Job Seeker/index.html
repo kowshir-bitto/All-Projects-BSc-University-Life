@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Job Seeker</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="job" id="job">
+			<h2 onClick="toggleClass()">Job Seeker</h2>
+			<form>
+				<div class="row">
+					<div class="col-2">
+						<label>First Name</label>
+						<input type="text" name="" class="text" placeholder="Bitto"required>
+					</div>
+					<div class="col-2">
+						<label>Password</label>
+						<input type="text" name="" class="text" placeholder="Minimum 6 character"required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<label>University Name</label>
+						<input type="text" name="" class="text" placeholder="DIU"required>
+					</div>
+					<div class="col-2">
+						<label>CGPA</label>
+						<input type="text" name="" class="text" placeholder="3.75"required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<label>Salary</label>
+						<input type="text" name="" class="text" placeholder="50k"required>
+					</div>
+					<div class="col-2">
+						<label>Experience</label>
+						<input type="text" name="" class="text" placeholder="Python"required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<label>Your expert area</label>
+						<textarea placeholder="Write your expert area"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1">
+						<input type="submit" name="" value="Send message"required>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script type="text/javascript">
+			function toggleClass(){
+				var element = document.getElementById('job');
+				element.classList.toggle("active")
+			}
+		</script>
+	</body>
+</html>
